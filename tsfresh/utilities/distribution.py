@@ -13,7 +13,8 @@ import itertools
 import warnings
 from collections import Iterable
 from functools import partial
-from multiprocessing import Pool
+# from multiprocessing import Pool
+from billiard.pool import Pool
 from tqdm import tqdm
 
 
