@@ -13,9 +13,9 @@ import itertools
 import warnings
 from collections import Iterable
 from functools import partial
-from multiprocessing import Pool
+# from multiprocessing import Pool
 from tqdm import tqdm
-
+from billiard.pool import Pool
 
 def _function_with_partly_reduce(chunk_list, map_function, kwargs):
     """
